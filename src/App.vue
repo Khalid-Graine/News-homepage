@@ -38,33 +38,38 @@
     
     <!-- page -->
     <div class="grid md:grid-cols-3 gap-3  bg-black">
+      <!-- top part -->
       <div class="bg-yellow-200  md:col-span-2 grid grid-cols-2 gap-4 pb-4">
+      
         <div class="col-span-2">
           <img class="hidden md:flex" src="./assets/images/image-web-3-desktop.jpg" alt="">
           <img class="md:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="">
         </div>
+        
         <div class="col-span-2 md:col-span-1 w-10/12 md:w-full">
           <h1 class="text-5xl font-bold">The Bright Future of Web 3.0 ?</h1>
         </div>
+        
         <div class="col-span-2 md:col-span-1">
           <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
           <button class="mt-4 bg-xred text-white uppercase font-semibold text-lg py-1 px-5  tracking-widest">read more</button>
         </div>
       </div>
 
-
-      <div class="bg-green-200 md:col-span-1">
-        <h2>New</h2>
-        <ul>
-          <li>
+     <!-- middle part -->
+      <div class="bg-xdarkblue md:col-span-1 flex flex-col p-3">
+        <h2 class="mb-10 text-xorange font-bold text-3xl">New</h2>
+        <ul class="h-full flex flex-col gap-4 justify-between">
+          <li class="list">
             <h3>Hydrogen VS Electric Cars</h3>
           <small>Will hydrogen-fueled cars ever catch up to EVs?</small>
           </li>
-          <li>
+          <li class="list">
             <h3>The Downsides of AI Artistry</h3>
           <small>What are the possible adverse effects of on-demand AI image generation?</small>
           </li>
-          <li>
+         
+          <li class="list">
             <h3>Is VC Funding Drying Up?</h3>
           <small>Private funding by VC firms is down 50% YOY. We take a look at what that means</small>
           </li>
@@ -72,6 +77,8 @@
        
      
       </div>
+
+      <!-- bottom part -->
       <div class="bg-yellow-200 md:col-span-3">
         <div>
           <img src="./assets/images/image-retro-pcs.jpg" alt="">
@@ -112,3 +119,27 @@ function triggerMenu() {
 }
 </script>
 
+
+<style>
+.linkeffect {
+  @apply cursor-pointer hover:text-xred;
+}
+
+.borderr {
+  @apply border border-green-500
+}
+.list {
+  @apply flex flex-col gap-2
+}
+
+.list h3 {
+  @apply text-white font-semibold
+}
+.list small {
+  @apply text-xgrayishblue
+}
+
+ul .list:nth-child(2) {
+  @apply border border-x-transparent py-4
+}
+</style>
