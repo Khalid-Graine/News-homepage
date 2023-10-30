@@ -38,19 +38,21 @@
     
     <!-- page -->
     <div class="grid md:grid-cols-3 gap-3  bg-black">
-      <div class="bg-yellow-200  md:col-span-2">
-        <div>
+      <div class="bg-yellow-200  md:col-span-2 grid grid-cols-2 gap-4 pb-4">
+        <div class="col-span-2">
           <img class="hidden md:flex" src="./assets/images/image-web-3-desktop.jpg" alt="">
           <img class="md:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="">
         </div>
-        <div>
-          <h1>The Bright Future of Web 3.0 ?</h1>
+        <div class="col-span-2 md:col-span-1 w-10/12 md:w-full">
+          <h1 class="text-5xl font-bold">The Bright Future of Web 3.0 ?</h1>
         </div>
-        <div>
+        <div class="col-span-2 md:col-span-1">
           <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          <button>read more</button>
+          <button class="mt-4 bg-xred text-white uppercase font-semibold text-lg py-1 px-5  tracking-widest">read more</button>
         </div>
       </div>
+
+
       <div class="bg-green-200 md:col-span-1">
         <h2>New</h2>
         <ul>
@@ -93,14 +95,8 @@
           <small>How the pandemic has sparked fresh opportuninties</small>
           </div>
         </div>
-        
-        </div>
-       
-        
-       
 
-     
-    
+        </div>
     </div>
   </div>
 </template>
