@@ -1,9 +1,9 @@
 <template>
-     <div class="item">
+     <div class="col-span-3 lg:col-span-1 flex gap-4">
            
-          <img :src="`../../public/images/${props.pictureName}`" alt="">
+          <img class="flex object-cover max-w-[100px]" :src="`../../public/images/${props.pictureName}`" alt="">
 
-         <div class="">
+         <div class="flex flex-col justify-around flex-grow">
            <b class="text-3xl text-xgrayishblue">
             {{ props.number }}
            </b>
@@ -24,16 +24,3 @@
 const props = defineProps(['number', 'title', 'description', 'pictureName']);
 
 </script>
-
-
-<style>
-.item {
-  @apply  col-span-3 lg:col-span-1 flex gap-4   ;
-}
-.item img {
-  @apply   flex object-cover max-w-[100px]
-}
-.item div {
-  @apply flex flex-col justify-around flex-grow
-}
-</style>

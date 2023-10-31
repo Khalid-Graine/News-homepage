@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper relative p-4 my-4 lg:w-10/12 mx-auto">
+    
     <!-- Header -->
     <header class="flex justify-between items-center">
       <!-- Left Layer (Navigation) -->
@@ -42,8 +43,9 @@
     </header>
     <!-- end header -->
 
-    <!-- page -->
+    <!-- body of the page -->
     <div class="grid grid-cols-4 gap-4 mt-5">
+
       <!-- top part -->
       <div class="col-span-full lg:col-span-3 grid grid-cols-4 gap-4">
         <div class="col-span-full">
@@ -74,7 +76,6 @@
             really fulfilling its promise?
           </p>
           <MyButton>read more</MyButton>
-          
         </div>
       </div>
 
@@ -122,7 +123,6 @@
         />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -130,7 +130,7 @@
 import links from "./components/links.vue";
 import item from "./components/item.vue";
 import feature from "./components/feature.vue";
-import MyButton from "./components/mybutton.vue"
+import MyButton from "./components/mybutton.vue";
 import { ref } from "vue";
 
 const showMenu = ref(false);
